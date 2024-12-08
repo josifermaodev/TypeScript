@@ -14,7 +14,7 @@ const numeros: Set<number> = new Set(); // Set vazio para armazenar os numeros
 for (let i = 0; i < 10; i++) {
     const numero = readlineSync.questionInt(`\nDigite o ${i + 1}(o) numero: `);
 
-    // // verificando se o numero já existe no set
+    // // implementei uma verificação, para identificar se o numero já existe no set 
     // if (numeros.has(numero)) {
     //     console.log(`\nNumero ${numero} ja existe. Por favor, digite outro numero.`);
     //     i--; // volta para o loop anterior para pedir que o usuário digite o numero novamente.

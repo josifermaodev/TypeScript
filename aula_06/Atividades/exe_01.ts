@@ -35,7 +35,11 @@ while (continuar) {
             const clienteChamado = fila.dequeue();
             console.log("\nFila: \n")
             fila.printQueue();
-            console.log(`\nCliente ${clienteChamado} foi chamado(a).\n`);
+            if (clienteChamado) {
+                console.log(`\nCliente ${clienteChamado} foi removido da fila!`);
+            } else {
+                console.log('\nA fila está vazia, Tente novamente!');
+            }
             break;
 
         case 0: 

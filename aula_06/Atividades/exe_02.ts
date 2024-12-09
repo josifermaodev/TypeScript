@@ -6,18 +6,15 @@ let pilha: Stack<string> = new Stack<string>();
 let continuar = true; // Variável de controle para o loop do menu
 
 
-console.clear(); // Limpa o terminal a cada iteração
-    console.log("\n***********************************");
+while (continuar) {
+    console.log("\n=====================================");
     console.log(
         "1 - Adicionar um novo livro na pilha\n",
         "2 - Listar todos os livros na pilha\n",
         "3 - Retirar um livro da pilha\n",
         "0 - Sair"
     );
-    console.log("***********************************");
-
-
-while (continuar) {
+    console.log("=====================================");
     
     const opcao = readlineSync.questionInt("\nEntre com a opcao desejada: ");
 
@@ -53,6 +50,10 @@ while (continuar) {
             console.clear();
             console.log("\nSaindooo... Volte sempre!")
             continuar = false;
+            break;
+
+        default:
+            console.log("\nOpção inválida. Tente novamente.");
             break;
     }
 }

@@ -36,10 +36,10 @@ while (continuar) {
         case 3:
             
             if (!pilha.isEmpty()) {
-                const nomeLivro = pilha.pop();
+                const livroRemovido = pilha.pop();
                 console.log("Pilha: \n")
                 pilha.printStack();
-                console.log(`\nLivro ${nomeLivro} retirado da pilha!`);
+                console.log(`\nLivro ${livroRemovido} retirado da pilha!`);
                 
             } else {
                 console.log("\nPilha vazia. Não há livros para retirar.");

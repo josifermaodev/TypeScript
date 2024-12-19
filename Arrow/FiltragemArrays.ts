@@ -59,3 +59,4 @@ console.log("Combinacao de Arrays")
 
 const arrayCombinado: number[] = [...numerosOrdenados, ...numerosDesordenados]; 
 
+console.dir(arrayCombinado)
